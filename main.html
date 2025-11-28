@@ -1,26 +1,35 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-	<h1>Favourate dogs</h1>
-	<img src="https://www.pexels.com/search/dog/" alt="image">
-	<nav>
-	<ul>
-		<li>yellow dog</li>
-		<li>pink dog</li>
-		<li>green dog</li>
-		
-	</ul>
-		</nav>
 
+    <!-- Heading with ARIA role -->
+    <h1 role="heading">Favourite Dogs</h1>
+
+    <!-- Navigation bar with ARIA role -->
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem">Yellow Dog</li>
+            <li role="listitem">Pink Dog</li>
+            <li role="listitem">Green Dog</li>
+        </ul>
+    </nav>
+
+    <!-- Image with ARIA img role + alt text -->
+    <img 
+        role="img" 
+        src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" 
+        alt="A cute dog sitting in the grass"
+        width="300"
+    >
+
+    <!-- Brief description -->
+    <p>A collection of my favourite dog breeds displayed in a simple accessible portfolio.</p>
+
+    <script src="./script.js"></script>
 </body>
-
 </html>
